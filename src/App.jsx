@@ -431,7 +431,7 @@ export default function App() {
 
       {/* Table */}
       <div style={{ overflowX: "auto", background: "#fff", borderRadius: 12, border: `1px solid ${CARD_BORDER}`, boxShadow: "0 1px 3px rgba(15,32,58,0.06)" }}>
-        <table style={{ borderCollapse: "collapse", width: "100%", minWidth: 1040 }}>
+        <table style={{ borderCollapse: "collapse", width: "auto", minWidth: 1040 }}>
           <thead>
             <tr style={{ background: NAVY_HEADER }}>
               <th style={{ textAlign: "left", verticalAlign: "middle", padding: "16px 18px", minWidth: 220, fontSize: 15, fontWeight: 800, color: "#fff", fontFamily: SANS, letterSpacing: 0.3, borderRight: "1px solid rgba(255,255,255,0.18)" }}>
@@ -453,7 +453,7 @@ export default function App() {
                     fontFamily: SANS, fontSize: 12.5, fontWeight: 700, color: "#eaf1fb",
                     padding: "14px 5px 14px", verticalAlign: "bottom", whiteSpace: "nowrap",
                     writingMode: "vertical-rl", transform: "rotate(180deg)", height: 190,
-                    letterSpacing: 0.25, cursor: "pointer", minWidth: 42,
+                    letterSpacing: 0.25, cursor: "pointer", minWidth: 42, textAlign: "center",
                     borderRight: "1px solid rgba(255,255,255,0.18)",
                     background: commitmentFilter === i ? "rgba(207,68,54,0.55)" : sortCol === i ? NAVY_SOFT : undefined,
                   }}>
