@@ -452,15 +452,12 @@ export default function App() {
                   style={{
                     fontFamily: SANS, fontSize: 12.5, fontWeight: 700, color: "#eaf1fb",
                     padding: "14px 5px", whiteSpace: "nowrap", height: 190,
-                    letterSpacing: 0.25, cursor: "pointer", minWidth: 42,
+                    letterSpacing: 0.25, cursor: "pointer", minWidth: 42, textAlign: "center",
                     borderRight: "1px solid rgba(255,255,255,0.18)",
                     background: commitmentFilter === i ? "rgba(207,68,54,0.55)" : sortCol === i ? NAVY_SOFT : undefined,
                   }}>
-                  <div style={{
-                    display: "flex", justifyContent: "center", alignItems: "flex-end",
-                    width: "100%", height: "100%",
-                  }}>
-                    <span style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>{lbl}</span>
+                  <div style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", display: "inline-block" }}>
+                    {lbl}
                   </div>
                 </th>
               ))}
