@@ -71,6 +71,44 @@ const ALL_DATA = [
   { n: "YPO Kuwait Integrated",                 t: "YPO",      s: 5,  prev: 10,      v: [0,1,1,0,1,0,0,1,0,0,0,0,0,1] },
 ];
 
+const PREV_DATA = [
+  { n: "YPO UAE Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Levant Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO MENA One Regional Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Dubai Downtown Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Emirates Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Morocco Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Tunisia Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Olive MENA Regional Integrated", t: "YPO", s: 13, v: [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Gold Lebanon", t: "YPO Gold", s: 13, g: 1, v: [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Jordan Integrated", t: "YPO", s: 13, v: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Lebanon", t: "YPO", s: 13, v: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Pakistan", t: "YPO", s: 13, v: [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Saudi", t: "YPO", s: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Khaleej Integrated", t: "YPO", s: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1] },
+  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Capital Pakistan Integrated", t: "YPO", s: 12, v: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Dubai Integrated", t: "YPO", s: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Gold Pakistan", t: "YPO Gold", s: 12, g: 1, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Palestine Integrated", t: "YPO", s: 12, v: [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Oman Integrated", t: "YPO", s: 11, v: [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Gold Saudi", t: "YPO Gold", s: 11, g: 1, v: [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Cairo Integrated", t: "YPO", s: 11, v: [0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
+  { n: "YPO Indus Integrated", t: "YPO", s: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Iraq Integrated", t: "YPO", s: 11, v: [1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
+  { n: "YPO Qatar Integrated", t: "YPO", s: 10, v: [1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1] },
+  { n: "YPO Bahrain Integrated", t: "YPO", s: 10, v: [0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
+  { n: "YPO Kuwait Integrated", t: "YPO", s: 10, v: [0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
+];
+
+/* Merged current-vs-previous dataset for the Compare tab */
+const COMPARE_DATA = ALL_DATA.map(curr => {
+  const prevObj = PREV_DATA.find(p => p.n === curr.n);
+  const deltaScore = prevObj ? curr.s - prevObj.s : null;
+  const deltaV = prevObj ? curr.v.map((val, i) => val - prevObj.v[i]) : curr.v.map(() => 0); // 1 gained, -1 lost, 0 unchanged
+  return { n: curr.n, t: curr.t, g: curr.g, curr, prevObj, deltaScore, deltaV };
+});
+
 function median(nums) {
   const s = [...nums].sort((a, b) => a - b);
   const mid = Math.floor(s.length / 2);
@@ -83,38 +121,72 @@ function totalPill(s) {
     : { bg: AMBER_PALE, tx: AMBER_TEXT };
 }
 
+function deltaBadge(curr, prev) {
+  if (prev == null) return null;
+  const d = curr - prev;
+  if (d === 0) return { label: "–", color: "#8899aa" };
+  if (d > 0) return { label: `▲ +${d}`, color: GREEN };
+  return { label: `▼ ${d}`, color: RED_TEXT };
+}
+
 export default function App() {
   const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState("all"); // all | integrated | gold | risk
+  const [year, setYear] = useState("current"); // current | previous | compare
+  const [filter, setFilter] = useState("all"); // meaning depends on tab, see filterBtns below
   const [commitmentFilter, setCommitmentFilter] = useState(null); // index into LABELS, or null
   const [sortCol, setSortCol] = useState(null);
   const [showDefs, setShowDefs] = useState(false);
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0, content: null });
   const tooltipRef = useRef(null);
 
-  const total = ALL_DATA.length;
-  const fullyMet = ALL_DATA.filter(d => d.s === 14).length;
-  const pctMet = Math.round(ALL_DATA.reduce((a, d) => a + d.s, 0) / (total * 14) * 100);
-  const med = median(ALL_DATA.map(d => d.s));
+  const isCompare = year === "compare";
+  const activeData = year === "current" ? ALL_DATA : year === "previous" ? PREV_DATA : COMPARE_DATA;
 
-  const failCounts = useMemo(() => LABELS.map((_, i) => ALL_DATA.filter(d => d.v[i] === 0).length), []);
+  const changeYear = y => { setYear(y); setFilter("all"); setCommitmentFilter(null); };
+
+  // ---- non-compare (current / previous) stats ----
+  const total = activeData.length;
+  const fullyMet = !isCompare ? activeData.filter(d => d.s === 14).length : 0;
+  const pctMet = !isCompare ? Math.round(activeData.reduce((a, d) => a + d.s, 0) / (total * 14) * 100) : 0;
+  const med = !isCompare ? median(activeData.map(d => d.s)) : 0;
+  const failCounts = useMemo(() => LABELS.map((_, i) => (isCompare ? COMPARE_DATA : activeData).filter(d => (isCompare ? d.curr.v[i] === 0 : d.v[i] === 0)).length), [activeData, isCompare]);
   const worstIdx = useMemo(() => failCounts.indexOf(Math.max(...failCounts)), [failCounts]);
 
+  // ---- compare-only stats ----
+  const improvedCount = isCompare ? COMPARE_DATA.filter(d => d.deltaScore > 0).length : 0;
+  const declinedCount = isCompare ? COMPARE_DATA.filter(d => d.deltaScore < 0).length : 0;
+  const unchangedCount = isCompare ? COMPARE_DATA.filter(d => d.deltaScore === 0).length : 0;
+  const avgDelta = isCompare ? (COMPARE_DATA.reduce((a, d) => a + d.deltaScore, 0) / COMPARE_DATA.length) : 0;
+  const changeCounts = useMemo(() => LABELS.map((_, i) => COMPARE_DATA.filter(d => d.deltaV[i] !== 0).length), []);
+
   const filtered = useMemo(() => {
-    let rows = ALL_DATA;
-    if (filter === "integrated") rows = rows.filter(d => d.t === "YPO" && !d.g);
-    if (filter === "gold") rows = rows.filter(d => d.t === "YPO Gold");
-    if (filter === "risk") rows = rows.filter(d => (14 - d.s) >= 3);
-    if (commitmentFilter != null) rows = rows.filter(d => d.v[commitmentFilter] === 0);
+    let rows = activeData;
+    if (isCompare) {
+      if (filter === "integrated") rows = rows.filter(d => d.t === "YPO" && !d.g);
+      if (filter === "gold") rows = rows.filter(d => d.t === "YPO Gold");
+      if (filter === "improved") rows = rows.filter(d => d.deltaScore > 0);
+      if (filter === "declined") rows = rows.filter(d => d.deltaScore < 0);
+      if (filter === "unchanged") rows = rows.filter(d => d.deltaScore === 0);
+      if (commitmentFilter != null) rows = rows.filter(d => d.deltaV[commitmentFilter] !== 0);
+    } else {
+      if (filter === "integrated") rows = rows.filter(d => d.t === "YPO" && !d.g);
+      if (filter === "gold") rows = rows.filter(d => d.t === "YPO Gold");
+      if (filter === "risk") rows = rows.filter(d => (14 - d.s) >= 3);
+      if (commitmentFilter != null) rows = rows.filter(d => d.v[commitmentFilter] === 0);
+    }
     if (query.trim()) {
       const q = query.trim().toLowerCase();
       rows = rows.filter(d => d.n.toLowerCase().includes(q));
     }
     return rows;
-  }, [filter, commitmentFilter, query]);
+  }, [activeData, isCompare, filter, commitmentFilter, query]);
 
   const sorted = useMemo(() => {
     const rows = [...filtered];
+    if (isCompare) {
+      rows.sort((a, b) => a.deltaScore - b.deltaScore); // biggest declines first
+      return rows;
+    }
     rows.sort((a, b) => {
       if (sortCol === "score") return b.s - a.s;
       if (typeof sortCol === "number") {
@@ -129,7 +201,13 @@ export default function App() {
   const showTooltip = (e, content) => setTooltip({ visible: true, x: e.clientX + 14, y: e.clientY + 14, content });
   const hideTooltip = () => setTooltip(t => ({ ...t, visible: false }));
 
-  const cards = [
+  const cards = isCompare ? [
+    { value: total, label: "CHAPTERS COMPARED" },
+    { value: improvedCount, label: "IMPROVED", accentColor: GREEN, onClick: () => setFilter("improved") },
+    { value: declinedCount, label: "DECLINED", accentColor: RED_TEXT, onClick: () => setFilter("declined") },
+    { value: unchangedCount, label: "UNCHANGED", accentColor: GOLD_ACCENT, onClick: () => setFilter("unchanged") },
+    { value: `${avgDelta > 0 ? "+" : ""}${avgDelta.toFixed(1)}`, label: "AVG CHANGE / CHAPTER" },
+  ] : [
     { value: total, label: "CHAPTERS" },
     { value: <>{fullyMet}<span style={{ fontSize: 15, fontWeight: 600, color: MUTED }}> of {total}</span></>, label: "FULLY MET (14/14)" },
     { value: `${pctMet}%`, label: "COMMITMENTS MET" },
@@ -143,7 +221,12 @@ export default function App() {
     },
   ];
 
-  const filterBtns = [
+  const filterBtns = isCompare ? [
+    { key: "all", label: "All Chapters" },
+    { key: "improved", label: "▲ Improved" },
+    { key: "declined", label: "▼ Declined" },
+    { key: "unchanged", label: "– Unchanged" },
+  ] : [
     { key: "all", label: "All Chapters" },
     { key: "integrated", label: "YPO Integrated" },
     { key: "gold", label: "YPO Gold" },
@@ -180,9 +263,40 @@ export default function App() {
         <h1 style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 38, color: NAVY, margin: 0, lineHeight: 1.15, letterSpacing: "-0.015em" }}>
           Chapter Commitments by Status
         </h1>
-        <p style={{ fontSize: 13.5, color: MUTED, marginTop: 10, marginBottom: 0 }}>
-          Commitment fulfilment across all MENA chapters · As of 13 July 2026
+        <p style={{ fontSize: 13.5, color: MUTED, marginTop: 10, marginBottom: 18 }}>
+          Commitment fulfilment across all MENA chapters · {year === "current" ? "As of 13 July 2026" : year === "previous" ? "As of 6 February 2026" : "6 February 2026 → 13 July 2026"}
         </p>
+
+        <div className="no-print" style={{ display: "inline-flex", background: "#fff", border: `1px solid ${CARD_BORDER}`, borderRadius: 10, padding: 4, gap: 2 }}>
+          <button onClick={() => changeYear("current")} style={{
+            fontFamily: SANS, fontSize: 13, fontWeight: 700, padding: "8px 18px", borderRadius: 7,
+            border: "none", cursor: "pointer",
+            background: year === "current" ? NAVY : "transparent",
+            color: year === "current" ? "#fff" : "#4a5568",
+          }}>2026–27 · Current</button>
+          <button onClick={() => changeYear("previous")} style={{
+            fontFamily: SANS, fontSize: 13, fontWeight: 700, padding: "8px 18px", borderRadius: 7,
+            border: "none", cursor: "pointer",
+            background: year === "previous" ? NAVY : "transparent",
+            color: year === "previous" ? "#fff" : "#4a5568",
+          }}>2025–26 · Previous</button>
+          <button onClick={() => changeYear("compare")} style={{
+            fontFamily: SANS, fontSize: 13, fontWeight: 700, padding: "8px 18px", borderRadius: 7,
+            border: "none", cursor: "pointer",
+            background: year === "compare" ? NAVY : "transparent",
+            color: year === "compare" ? "#fff" : "#4a5568",
+          }}>⇄ Compare</button>
+        </div>
+        {year === "previous" && (
+          <div style={{ marginTop: 12, fontSize: 12, color: AMBER_TEXT, background: AMBER_PALE, display: "inline-block", padding: "6px 12px", borderRadius: 8 }}>
+            Viewing the 02/06/2026 snapshot from the prior fiscal year — read-only reference, not the current status.
+          </div>
+        )}
+        {year === "compare" && (
+          <div style={{ marginTop: 12, fontSize: 12, color: AMBER_TEXT, background: AMBER_PALE, display: "inline-block", padding: "6px 12px", borderRadius: 8 }}>
+            Comparing the 02/06/2026 snapshot to today, 13 July 2026. Most of the region-wide decline reflects the new fiscal year resetting annual commitments, not new non-compliance.
+          </div>
+        )}
       </div>
 
       {/* Stat cards */}
@@ -219,9 +333,11 @@ export default function App() {
             fontSize: 13.5, fontFamily: SANS, background: commitmentFilter != null ? NAVY : "#fff",
             color: commitmentFilter != null ? "#fff" : NAVY, cursor: "pointer", minWidth: 220,
           }}>
-          <option value="">Filter by commitment...</option>
+          <option value="">{isCompare ? "Filter by commitment change..." : "Filter by commitment..."}</option>
           {LABELS.map((lbl, i) => (
-            <option key={i} value={i} style={{ color: NAVY }}>{lbl} ({failCounts[i]} not met)</option>
+            <option key={i} value={i} style={{ color: NAVY }}>
+              {lbl} ({isCompare ? `${changeCounts[i]} changed` : `${failCounts[i]} not met`})
+            </option>
           ))}
         </select>
         {commitmentFilter != null && (
@@ -248,30 +364,61 @@ export default function App() {
       {/* Legend + PDF definitions button */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 18, flexWrap: "wrap", gap: 12 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 18, flexWrap: "wrap" }}>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-            <span style={{ width: 18, height: 18, borderRadius: 5, background: GREEN, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>&#10003;</span>
-            Commitment met
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-            <span style={{ width: 18, height: 18, borderRadius: 5, background: RED_PALE, color: RED_TEXT, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>&#10007;</span>
-            Not yet met
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-            <span style={{ fontSize: 9.5, background: GOLD_BADGE_BG, color: GOLD_BADGE_TEXT, borderRadius: 4, padding: "2px 6px", fontWeight: 700, letterSpacing: 0.4 }}>GOLD</span>
-            YPO Gold chapter
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-            <span style={{ width: 4, height: 14, borderRadius: 2, background: GREEN, display: "inline-block" }} />
-            Fully met
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-            <span style={{ width: 4, height: 14, borderRadius: 2, background: GOLD_ACCENT, display: "inline-block" }} />
-            In progress
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-            <span style={{ width: 4, height: 14, borderRadius: 2, background: RED_TEXT, display: "inline-block" }} />
-            At risk (3+ gaps)
-          </span>
+          {isCompare ? (
+            <>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 18, height: 18, borderRadius: 5, background: GREEN, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>▲</span>
+                Gained since 02/06
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 18, height: 18, borderRadius: 5, background: RED_TEXT, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>▼</span>
+                Lost since 02/06
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 18, height: 18, borderRadius: 5, background: "#eaf5ee", color: "#7fa88f", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>✓</span>
+                Unchanged, still met
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ fontSize: 9.5, background: GOLD_BADGE_BG, color: GOLD_BADGE_TEXT, borderRadius: 4, padding: "2px 6px", fontWeight: 700, letterSpacing: 0.4 }}>GOLD</span>
+                YPO Gold chapter
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 4, height: 14, borderRadius: 2, background: GREEN, display: "inline-block" }} />
+                Chapter improved
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 4, height: 14, borderRadius: 2, background: RED_TEXT, display: "inline-block" }} />
+                Chapter declined
+              </span>
+            </>
+          ) : (
+            <>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 18, height: 18, borderRadius: 5, background: GREEN, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>&#10003;</span>
+                Commitment met
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 18, height: 18, borderRadius: 5, background: RED_PALE, color: RED_TEXT, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>&#10007;</span>
+                Not yet met
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ fontSize: 9.5, background: GOLD_BADGE_BG, color: GOLD_BADGE_TEXT, borderRadius: 4, padding: "2px 6px", fontWeight: 700, letterSpacing: 0.4 }}>GOLD</span>
+                YPO Gold chapter
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 4, height: 14, borderRadius: 2, background: GREEN, display: "inline-block" }} />
+                Fully met
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 4, height: 14, borderRadius: 2, background: GOLD_ACCENT, display: "inline-block" }} />
+                In progress
+              </span>
+              <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
+                <span style={{ width: 4, height: 14, borderRadius: 2, background: RED_TEXT, display: "inline-block" }} />
+                At risk (3+ gaps)
+              </span>
+            </>
+          )}
         </div>
         <button className="no-print" onClick={() => setShowDefs(true)} style={{
           display: "flex", alignItems: "center", gap: 8, background: "#fff", border: `1px solid ${GREEN}`,
@@ -296,7 +443,9 @@ export default function App() {
                     <div>
                       <div style={{ fontWeight: 700, marginBottom: 4 }}>{lbl}</div>
                       <div style={{ color: "#c9d3e0", fontSize: 10.5 }}>{LABELS_FULL[i]}</div>
-                      <div style={{ color: "#ffb4ac", fontSize: 10, marginTop: 3 }}>{failCounts[i]} chapter{failCounts[i] !== 1 ? "s" : ""} not meeting this · click to filter</div>
+                      <div style={{ color: "#ffb4ac", fontSize: 10, marginTop: 3 }}>
+                        {isCompare ? `${changeCounts[i]} chapter${changeCounts[i] !== 1 ? "s" : ""} changed · click to filter` : `${failCounts[i]} chapter${failCounts[i] !== 1 ? "s" : ""} not meeting this · click to filter`}
+                      </div>
                     </div>
                   ))}
                   onMouseLeave={hideTooltip}
@@ -311,19 +460,95 @@ export default function App() {
                   {lbl}
                 </th>
               ))}
-              <th onClick={() => setSortCol("score")} style={{
-                fontFamily: SANS, fontSize: 12, fontWeight: 800, color: "#fff",
-                textAlign: "right", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap",
-                letterSpacing: 0.6, textTransform: "uppercase", cursor: "pointer", minWidth: 90,
-              }}>
-                Total met
-              </th>
+              {isCompare ? (
+                <>
+                  <th style={{ fontFamily: SANS, fontSize: 11.5, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 12px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Prev</th>
+                  <th style={{ fontFamily: SANS, fontSize: 11.5, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 12px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Current</th>
+                  <th style={{ fontFamily: SANS, fontSize: 11.5, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Δ</th>
+                </>
+              ) : (
+                <th onClick={() => setSortCol("score")} style={{
+                  fontFamily: SANS, fontSize: 12, fontWeight: 800, color: "#fff",
+                  textAlign: "right", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap",
+                  letterSpacing: 0.6, textTransform: "uppercase", cursor: "pointer", minWidth: 90,
+                }}>
+                  Total met
+                </th>
+              )}
             </tr>
           </thead>
           <tbody>
             {sorted.length === 0 ? (
-              <tr><td colSpan={16} style={{ textAlign: "center", padding: 32, color: MUTED, fontSize: 13 }}>No chapters match the current filters.</td></tr>
-            ) : sorted.map(d => {
+              <tr><td colSpan={isCompare ? 18 : 16} style={{ textAlign: "center", padding: 32, color: MUTED, fontSize: 13 }}>No chapters match the current filters.</td></tr>
+            ) : isCompare ? sorted.map(d => {
+              const prevScore = d.prevObj ? d.prevObj.s : null;
+              const currScore = d.curr.s;
+              const prevPill = prevScore != null ? totalPill(prevScore) : null;
+              const currPill = totalPill(currScore);
+              const delta = deltaBadge(currScore, prevScore);
+              const accent = d.deltaScore > 0 ? GREEN : d.deltaScore < 0 ? RED_TEXT : "#9aa5b3";
+              const nameBg = d.deltaScore > 0 ? GREEN_PALE : d.deltaScore < 0 ? RED_PALE : "#f2f4f7";
+              return (
+                <tr key={d.n} style={{ borderBottom: `1px solid ${CARD_BORDER}` }}>
+                  <td style={{ background: nameBg, padding: "13px 18px 13px 15px", whiteSpace: "nowrap", borderLeft: `5px solid ${accent}`, borderRight: `1px solid ${CARD_BORDER}` }}>
+                    <span style={{ color: NAVY, fontSize: 14.5, fontWeight: 800, fontFamily: SANS, letterSpacing: 0.15 }}>
+                      {d.g ? <span style={{ fontSize: 9.5, background: GOLD_BADGE_BG, color: GOLD_BADGE_TEXT, borderRadius: 4, padding: "2px 6px", fontWeight: 700, letterSpacing: 0.4, marginRight: 8 }}>GOLD</span> : null}
+                      {d.n.replace(/^YPO\s+/, "").replace(/^Gold\s+/, "")}
+                    </span>
+                  </td>
+                  {d.curr.v.map((val, i) => {
+                    const prevVal = d.prevObj ? d.prevObj.v[i] : val;
+                    const changed = val - prevVal;
+                    const cell = changed === 1
+                      ? { bg: GREEN, fg: "#fff", icon: "\u25B2" }
+                      : changed === -1
+                      ? { bg: RED_TEXT, fg: "#fff", icon: "\u25BC" }
+                      : val === 1
+                      ? { bg: "#eaf5ee", fg: "#7fa88f", icon: "\u2713" }
+                      : { bg: "#f2f4f7", fg: "#aab2bd", icon: "\u00B7" };
+                    return (
+                      <td key={i}
+                        onMouseEnter={e => showTooltip(e, (
+                          <div>
+                            <div style={{ fontWeight: 700, marginBottom: 4, fontSize: 12 }}>{d.n}</div>
+                            <div style={{ fontSize: 11 }}>{LABELS_FULL[i]}</div>
+                            <div style={{ marginTop: 4 }}>
+                              {changed === 1 && <span style={{ color: "#8fe0a8" }}>▲ Gained since 02/06/2026</span>}
+                              {changed === -1 && <span style={{ color: "#ff9d92" }}>▼ Lost since 02/06/2026</span>}
+                              {changed === 0 && <span style={{ color: "#c9d3e0" }}>Unchanged — {val ? "still met" : "still not met"}</span>}
+                            </div>
+                          </div>
+                        ))}
+                        onMouseLeave={hideTooltip}
+                        style={{ textAlign: "center", padding: "8px 3px", borderRight: `1px solid ${CARD_BORDER}`, background: commitmentFilter === i ? "rgba(207,68,54,0.06)" : undefined }}>
+                        <div style={{
+                          width: 26, height: 26, borderRadius: 6, margin: "0 auto",
+                          display: "flex", alignItems: "center", justifyContent: "center",
+                          fontSize: 12, fontWeight: 700, background: cell.bg, color: cell.fg,
+                        }}>
+                          {cell.icon}
+                        </div>
+                      </td>
+                    );
+                  })}
+                  <td style={{ textAlign: "right", padding: "11px 12px" }}>
+                    {prevPill && (
+                      <span style={{ display: "inline-block", padding: "3px 10px", borderRadius: 999, fontSize: 12.5, fontWeight: 700, background: prevPill.bg, color: prevPill.tx }}>
+                        {prevScore}<span style={{ fontWeight: 500, fontSize: 11 }}>/14</span>
+                      </span>
+                    )}
+                  </td>
+                  <td style={{ textAlign: "right", padding: "11px 12px" }}>
+                    <span style={{ display: "inline-block", padding: "3px 10px", borderRadius: 999, fontSize: 12.5, fontWeight: 700, background: currPill.bg, color: currPill.tx }}>
+                      {currScore}<span style={{ fontWeight: 500, fontSize: 11 }}>/14</span>
+                    </span>
+                  </td>
+                  <td style={{ textAlign: "right", padding: "11px 18px" }}>
+                    {delta && <span style={{ fontSize: 12.5, fontWeight: 800, color: delta.color }}>{delta.label}</span>}
+                  </td>
+                </tr>
+              );
+            }) : sorted.map(d => {
               const pill = totalPill(d.s);
               const delta = d.prev != null ? d.s - d.prev : null;
               const gaps = 14 - d.s;
@@ -384,9 +609,11 @@ export default function App() {
         </table>
       </div>
 
-      <p style={{ fontSize: 11.5, color: MUTED, marginTop: 14 }}>
-        Scores reflect the fiscal year that began 7/1/2026. Several annual commitments (Officer ID, Conduct Cmte, Learning Cal, Forum Mod, Forum Data, Membership) reset at FY start and aren't due until later in the year — hover a "Total met" pill for the change vs. the 02/06/2026 snapshot.
-      </p>
+      {year === "current" && (
+        <p style={{ fontSize: 11.5, color: MUTED, marginTop: 14 }}>
+          Scores reflect the fiscal year that began 7/1/2026. Several annual commitments (Officer ID, Conduct Cmte, Learning Cal, Forum Mod, Forum Data, Membership) reset at FY start and aren't due until later in the year — hover a "Total met" pill for the change vs. the 02/06/2026 snapshot.
+        </p>
+      )}
 
       {/* Tooltip */}
       {tooltip.visible && (
