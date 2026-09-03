@@ -13,6 +13,8 @@ const RED_TEXT    = "#cf4436";
 const RED_PALE    = "#fbe6e4";
 const AMBER_PALE  = "#faf1da";
 const AMBER_TEXT  = "#8a6d1f";
+const ORANGE_PALE = "#fde3cc";
+const ORANGE_TEXT = "#b5540c";
 const GOLD_BADGE_BG   = "#f2e2ac";
 const GOLD_BADGE_TEXT = "#7a5c12";
 const GOLD_ACCENT     = "#d6a92c";
@@ -40,33 +42,33 @@ const LABELS_FULL = [
   "Forum data verified", "Chapter membership verified", "Minimum number of members met",
 ];
 
-/* prev = score as of the 18 Aug 2026 snapshot, for the vs.-last-update tooltip */
+/* prev = score as of the 25 Aug 2026 snapshot, for the vs.-last-update tooltip */
 const ALL_DATA = [
   { n: "YPO Morocco Integrated", t: "YPO", s: 14, prev: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Emirates Integrated", t: "YPO", s: 13, prev: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
   { n: "YPO Gold Lebanon", t: "YPO Gold", s: 13, prev: 13, g: 1, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Levant Integrated", t: "YPO", s: 13, prev: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Olive MENA Regional Integrated", t: "YPO", s: 13, prev: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Pakistan", t: "YPO", s: 13, prev: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Saudi", t: "YPO", s: 13, prev: 12, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Gold Pakistan", t: "YPO Gold", s: 12, prev: 12, g: 1, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
-  { n: "YPO Olive MENA Regional Integrated", t: "YPO", s: 12, prev: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1] },
-  { n: "YPO Saudi", t: "YPO", s: 12, prev: 11, v: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Lebanon", t: "YPO", s: 12, prev: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Bahrain Integrated", t: "YPO", s: 11, prev: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Capital Pakistan Integrated", t: "YPO", s: 11, prev: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
-  { n: "YPO Lebanon", t: "YPO", s: 11, prev: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
-  { n: "YPO Levant Integrated", t: "YPO", s: 11, prev: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1] },
+  { n: "YPO Dubai Integrated", t: "YPO", s: 11, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
+  { n: "YPO Khaleej Integrated", t: "YPO", s: 11, prev: 10, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1] },
   { n: "YPO MENA One Regional Integrated", t: "YPO", s: 11, prev: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1] },
-  { n: "YPO Bahrain Integrated", t: "YPO", s: 10, prev: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1] },
+  { n: "YPO UAE Integrated", t: "YPO", s: 11, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
   { n: "YPO Dubai Downtown Integrated", t: "YPO", s: 10, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1] },
-  { n: "YPO Dubai Integrated", t: "YPO", s: 10, prev: 9, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
-  { n: "YPO Khaleej Integrated", t: "YPO", s: 10, prev: 10, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1] },
-  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 10, prev: 9, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] },
+  { n: "YPO Iraq Integrated", t: "YPO", s: 10, prev: 7, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] },
+  { n: "YPO Jordan Integrated", t: "YPO", s: 10, prev: 9, v: [0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1] },
+  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 10, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] },
   { n: "YPO Palestine Integrated", t: "YPO", s: 10, prev: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1] },
-  { n: "YPO UAE Integrated", t: "YPO", s: 10, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1] },
-  { n: "YPO Jordan Integrated", t: "YPO", s: 9, prev: 9, v: [0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1] },
+  { n: "YPO Qatar Integrated", t: "YPO", s: 10, prev: 9, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] },
+  { n: "YPO Kuwait Integrated", t: "YPO", s: 9, prev: 8, v: [0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1] },
   { n: "YPO Oman Integrated", t: "YPO", s: 9, prev: 9, v: [0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1] },
-  { n: "YPO Qatar Integrated", t: "YPO", s: 9, prev: 9, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1] },
-  { n: "YPO Tunisia Integrated", t: "YPO", s: 9, prev: 8, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1] },
-  { n: "YPO Kuwait Integrated", t: "YPO", s: 8, prev: 8, v: [0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1] },
+  { n: "YPO Tunisia Integrated", t: "YPO", s: 9, prev: 9, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1] },
   { n: "YPO Gold Saudi", t: "YPO Gold", s: 7, prev: 7, g: 1, v: [0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1] },
-  { n: "YPO Iraq Integrated", t: "YPO", s: 7, prev: 6, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1] },
   { n: "YPO Cairo Integrated", t: "YPO", s: 6, prev: 6, v: [0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1] },
   { n: "YPO Indus Integrated", t: "YPO", s: 6, prev: 6, v: [0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1] },
 ];
@@ -78,27 +80,27 @@ const PREV_DATA = [
   { n: "YPO Pakistan", t: "YPO", s: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Gold Pakistan", t: "YPO Gold", s: 12, g: 1, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Olive MENA Regional Integrated", t: "YPO", s: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1] },
+  { n: "YPO Saudi", t: "YPO", s: 12, v: [1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Capital Pakistan Integrated", t: "YPO", s: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Lebanon", t: "YPO", s: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
   { n: "YPO Levant Integrated", t: "YPO", s: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1] },
   { n: "YPO MENA One Regional Integrated", t: "YPO", s: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1] },
-  { n: "YPO Saudi", t: "YPO", s: 11, v: [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Bahrain Integrated", t: "YPO", s: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1] },
   { n: "YPO Dubai Downtown Integrated", t: "YPO", s: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1] },
+  { n: "YPO Dubai Integrated", t: "YPO", s: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
   { n: "YPO Khaleej Integrated", t: "YPO", s: 10, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1] },
+  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] },
   { n: "YPO Palestine Integrated", t: "YPO", s: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1] },
   { n: "YPO UAE Integrated", t: "YPO", s: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1] },
-  { n: "YPO Dubai Integrated", t: "YPO", s: 9, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1] },
   { n: "YPO Jordan Integrated", t: "YPO", s: 9, v: [0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1] },
-  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 9, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1] },
   { n: "YPO Oman Integrated", t: "YPO", s: 9, v: [0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1] },
   { n: "YPO Qatar Integrated", t: "YPO", s: 9, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1] },
+  { n: "YPO Tunisia Integrated", t: "YPO", s: 9, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1] },
   { n: "YPO Kuwait Integrated", t: "YPO", s: 8, v: [0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1] },
-  { n: "YPO Tunisia Integrated", t: "YPO", s: 8, v: [0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1] },
   { n: "YPO Gold Saudi", t: "YPO Gold", s: 7, g: 1, v: [0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1] },
+  { n: "YPO Iraq Integrated", t: "YPO", s: 7, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1] },
   { n: "YPO Cairo Integrated", t: "YPO", s: 6, v: [0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1] },
   { n: "YPO Indus Integrated", t: "YPO", s: 6, v: [0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1] },
-  { n: "YPO Iraq Integrated", t: "YPO", s: 6, v: [0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1] },
 ];
 
 /* Merged current-vs-previous dataset for the Compare tab */
@@ -116,9 +118,9 @@ function median(nums) {
 }
 
 function totalPill(s) {
-  return s === 14
-    ? { bg: GREEN_PALE, tx: GREEN }
-    : { bg: AMBER_PALE, tx: AMBER_TEXT };
+  if (s === 14) return { bg: GREEN_PALE, tx: GREEN };
+  if (s > 10) return { bg: ORANGE_PALE, tx: ORANGE_TEXT };
+  return { bg: RED_PALE, tx: RED_TEXT };
 }
 
 function deltaBadge(curr, prev) {
@@ -264,7 +266,7 @@ export default function App() {
           Chapter Commitments by Status
         </h1>
         <p style={{ fontSize: 13.5, color: MUTED, marginTop: 10, marginBottom: 18 }}>
-          Commitment fulfilment across all MENA chapters · {year === "current" ? "As of 25 August 2026" : year === "previous" ? "As of 18 August 2026" : "18 August 2026 → 25 August 2026"}
+          Commitment fulfilment across all MENA chapters · {year === "current" ? "As of 2 September 2026" : year === "previous" ? "As of 25 August 2026" : "25 August 2026 → 2 September 2026"}
         </p>
 
         <div className="no-print" style={{ display: "inline-flex", background: "#fff", border: `1px solid ${CARD_BORDER}`, borderRadius: 10, padding: 4, gap: 2 }}>
@@ -279,7 +281,7 @@ export default function App() {
             border: "none", cursor: "pointer",
             background: year === "previous" ? NAVY : "transparent",
             color: year === "previous" ? "#fff" : "#4a5568",
-          }}>18 Aug · Previous</button>
+          }}>25 Aug · Previous</button>
           <button onClick={() => changeYear("compare")} style={{
             fontFamily: SANS, fontSize: 13, fontWeight: 700, padding: "8px 18px", borderRadius: 7,
             border: "none", cursor: "pointer",
@@ -289,12 +291,12 @@ export default function App() {
         </div>
         {year === "previous" && (
           <div style={{ marginTop: 12, fontSize: 12, color: AMBER_TEXT, background: AMBER_PALE, display: "inline-block", padding: "6px 12px", borderRadius: 8 }}>
-            Viewing the 18 August 2026 snapshot — read-only reference, not the current status.
+            Viewing the 25 August 2026 snapshot — read-only reference, not the current status.
           </div>
         )}
         {year === "compare" && (
           <div style={{ marginTop: 12, fontSize: 12, color: AMBER_TEXT, background: AMBER_PALE, display: "inline-block", padding: "6px 12px", borderRadius: 8 }}>
-            Comparing the 18 August 2026 snapshot to today, 25 August 2026 — both within FY 2026–27.
+            Comparing the 25 August 2026 snapshot to today, 2 September 2026 — both within FY 2026–27.
           </div>
         )}
       </div>
@@ -410,12 +412,12 @@ export default function App() {
                 Fully met
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
-                <span style={{ width: 4, height: 14, borderRadius: 2, background: GOLD_ACCENT, display: "inline-block" }} />
-                In progress
+                <span style={{ width: 4, height: 14, borderRadius: 2, background: ORANGE_TEXT, display: "inline-block" }} />
+                In progress (11–13)
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12.5, color: "#4a5568" }}>
                 <span style={{ width: 4, height: 14, borderRadius: 2, background: RED_TEXT, display: "inline-block" }} />
-                At risk (3+ gaps)
+                Below 10
               </span>
             </>
           )}
@@ -434,7 +436,7 @@ export default function App() {
         <table style={{ borderCollapse: "collapse", width: "100%", minWidth: 1040 }}>
           <thead>
             <tr style={{ background: NAVY_HEADER }}>
-              <th style={{ textAlign: "left", verticalAlign: "middle", padding: "16px 18px", minWidth: 220, fontSize: 15, fontWeight: 800, color: "#fff", fontFamily: SANS, letterSpacing: 0.3, borderRight: "1px solid rgba(255,255,255,0.18)" }}>
+              <th style={{ textAlign: "center", verticalAlign: "middle", padding: "16px 18px", minWidth: 220, fontSize: 18, fontWeight: 800, color: "#fff", fontFamily: SANS, letterSpacing: 0.3, borderRight: "1px solid rgba(255,255,255,0.18)" }}>
                 Chapter
               </th>
               {LABELS.map((lbl, i) => (
@@ -450,7 +452,7 @@ export default function App() {
                   ))}
                   onMouseLeave={hideTooltip}
                   style={{
-                    fontFamily: SANS, fontSize: 12.5, fontWeight: 700, color: "#eaf1fb",
+                    fontFamily: SANS, fontSize: 13.5, fontWeight: 700, color: "#eaf1fb",
                     padding: "14px 5px", whiteSpace: "nowrap", height: 190,
                     letterSpacing: 0.25, cursor: "pointer", minWidth: 42, textAlign: "center",
                     borderRight: "1px solid rgba(255,255,255,0.18)",
@@ -463,14 +465,14 @@ export default function App() {
               ))}
               {isCompare ? (
                 <>
-                  <th style={{ fontFamily: SANS, fontSize: 11.5, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 12px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Prev</th>
-                  <th style={{ fontFamily: SANS, fontSize: 11.5, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 12px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Current</th>
-                  <th style={{ fontFamily: SANS, fontSize: 11.5, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Δ</th>
+                  <th style={{ fontFamily: SANS, fontSize: 13, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 12px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Prev</th>
+                  <th style={{ fontFamily: SANS, fontSize: 13, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 12px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Current</th>
+                  <th style={{ fontFamily: SANS, fontSize: 13, fontWeight: 800, color: "#fff", textAlign: "right", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap", letterSpacing: 0.5, textTransform: "uppercase", minWidth: 70 }}>Δ</th>
                 </>
               ) : (
                 <th onClick={() => setSortCol("score")} style={{
-                  fontFamily: SANS, fontSize: 12, fontWeight: 800, color: "#fff",
-                  textAlign: "right", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap",
+                  fontFamily: SANS, fontSize: 15, fontWeight: 800, color: "#fff",
+                  textAlign: "center", padding: "14px 18px", verticalAlign: "middle", whiteSpace: "nowrap",
                   letterSpacing: 0.6, textTransform: "uppercase", cursor: "pointer", minWidth: 90,
                 }}>
                   Total met
@@ -514,8 +516,8 @@ export default function App() {
                             <div style={{ fontWeight: 700, marginBottom: 4, fontSize: 12 }}>{d.n}</div>
                             <div style={{ fontSize: 11 }}>{LABELS_FULL[i]}</div>
                             <div style={{ marginTop: 4 }}>
-                              {changed === 1 && <span style={{ color: "#8fe0a8" }}>▲ Gained since 18 Aug 2026</span>}
-                              {changed === -1 && <span style={{ color: "#ff9d92" }}>▼ Lost since 18 Aug 2026</span>}
+                              {changed === 1 && <span style={{ color: "#8fe0a8" }}>▲ Gained since 25 Aug 2026</span>}
+                              {changed === -1 && <span style={{ color: "#ff9d92" }}>▼ Lost since 25 Aug 2026</span>}
                               {changed === 0 && <span style={{ color: "#c9d3e0" }}>Unchanged — {val ? "still met" : "still not met"}</span>}
                             </div>
                           </div>
@@ -552,10 +554,10 @@ export default function App() {
             }) : sorted.map(d => {
               const pill = totalPill(d.s);
               const delta = d.prev != null ? d.s - d.prev : null;
-              const gaps = 14 - d.s;
-              const isRisk = gaps >= 3;
-              const accent = d.s === 14 ? GREEN : isRisk ? RED_TEXT : GOLD_ACCENT;
-              const nameBg = d.s === 14 ? GREEN_PALE : isRisk ? RED_PALE : AMBER_PALE;
+              const isMet = d.s === 14;
+              const isOrange = d.s > 10 && d.s < 14;
+              const accent = isMet ? GREEN : isOrange ? ORANGE_TEXT : RED_TEXT;
+              const nameBg = isMet ? GREEN_PALE : isOrange ? ORANGE_PALE : RED_PALE;
               return (
                 <tr key={d.n} style={{ borderBottom: `1px solid ${CARD_BORDER}` }}>
                   <td style={{ background: nameBg, padding: "13px 18px 13px 15px", whiteSpace: "nowrap", borderLeft: `5px solid ${accent}`, borderRight: `1px solid ${CARD_BORDER}` }}>
@@ -592,7 +594,7 @@ export default function App() {
                         <div style={{ fontWeight: 700, marginBottom: 4 }}>{d.n}</div>
                         {delta != null && (
                           <div style={{ color: delta === 0 ? "#c9d3e0" : delta > 0 ? "#8fe0a8" : "#ff9d92" }}>
-                            {delta === 0 ? "Unchanged" : delta > 0 ? `▲ up ${delta} vs 18 Aug` : `▼ down ${Math.abs(delta)} vs 18 Aug`}
+                            {delta === 0 ? "Unchanged" : delta > 0 ? `▲ up ${delta} vs 25 Aug` : `▼ down ${Math.abs(delta)} vs 25 Aug`}
                           </div>
                         )}
                       </div>
@@ -612,7 +614,7 @@ export default function App() {
 
       {year === "current" && (
         <p style={{ fontSize: 11.5, color: MUTED, marginTop: 14 }}>
-          Scores reflect the fiscal year that began 7/1/2026. Annual commitments (Officer ID, Conduct Cmte, Learning Cal, Forum Mod, Forum Data, Membership) reset once at FY start and are being completed progressively — hover a "Total met" pill for the change vs. the 18 August 2026 snapshot.
+          Scores reflect the fiscal year that began 7/1/2026. Annual commitments (Officer ID, Conduct Cmte, Learning Cal, Forum Mod, Forum Data, Membership) reset once at FY start and are being completed progressively — hover a "Total met" pill for the change vs. the 25 August 2026 snapshot.
         </p>
       )}
 
