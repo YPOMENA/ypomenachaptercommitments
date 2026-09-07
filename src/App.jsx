@@ -335,9 +335,9 @@ export default function App() {
             fontSize: 13.5, fontFamily: SANS, background: commitmentFilter != null ? NAVY : "#fff",
             color: commitmentFilter != null ? "#fff" : NAVY, cursor: "pointer", minWidth: 220,
           }}>
-          <option value="">{isCompare ? "Filter by commitment change..." : "Filter by commitment..."}</option>
+          <option value="" style={{ color: NAVY, background: "#fff" }}>{isCompare ? "Filter by commitment change..." : "Filter by commitment..."}</option>
           {LABELS.map((lbl, i) => (
-            <option key={i} value={i} style={{ color: NAVY }}>
+            <option key={i} value={i} style={{ color: NAVY, background: "#fff" }}>
               {lbl} ({isCompare ? `${changeCounts[i]} changed` : `${failCounts[i]} not met`})
             </option>
           ))}
