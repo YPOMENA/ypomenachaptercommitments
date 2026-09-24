@@ -42,12 +42,13 @@ const LABELS_FULL = [
   "Forum data verified", "Chapter membership verified", "Minimum number of members met",
 ];
 
-/* prev = score as of the 21 Sep 2026 snapshot, for the vs.-last-update tooltip */
+/* prev = score as of the 22 Sep 2026 snapshot, for the vs.-last-update tooltip */
 const ALL_DATA = [
-  { n: "YPO Khaleej Integrated", t: "YPO", s: 14, prev: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Khaleej Integrated", t: "YPO", s: 14, prev: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Morocco Integrated", t: "YPO", s: 14, prev: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Emirates Integrated", t: "YPO", s: 13, prev: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
   { n: "YPO Gold Lebanon", t: "YPO Gold", s: 13, prev: 13, g: 1, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO Lebanon", t: "YPO", s: 13, prev: 12, v: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Levant Integrated", t: "YPO", s: 13, prev: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Olive MENA Regional Integrated", t: "YPO", s: 13, prev: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Pakistan", t: "YPO", s: 13, prev: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
@@ -56,28 +57,27 @@ const ALL_DATA = [
   { n: "YPO Cairo Integrated", t: "YPO", s: 12, prev: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
   { n: "YPO Dubai Downtown Integrated", t: "YPO", s: 12, prev: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
   { n: "YPO Gold Pakistan", t: "YPO Gold", s: 12, prev: 12, g: 1, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
-  { n: "YPO Lebanon", t: "YPO", s: 12, prev: 12, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
+  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 12, prev: 11, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1] },
   { n: "YPO UAE Integrated", t: "YPO", s: 12, prev: 12, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Capital Pakistan Integrated", t: "YPO", s: 11, prev: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
   { n: "YPO Dubai Integrated", t: "YPO", s: 11, prev: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
-  { n: "YPO MENA Gulf Regional Integrated", t: "YPO", s: 11, prev: 11, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] },
+  { n: "YPO Indus Integrated", t: "YPO", s: 11, prev: 9, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] },
+  { n: "YPO Iraq Integrated", t: "YPO", s: 11, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
   { n: "YPO MENA One Regional Integrated", t: "YPO", s: 11, prev: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1] },
   { n: "YPO Oman Integrated", t: "YPO", s: 11, prev: 11, v: [0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Palestine Integrated", t: "YPO", s: 11, prev: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1] },
-  { n: "YPO Qatar Integrated", t: "YPO", s: 11, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
-  { n: "YPO Iraq Integrated", t: "YPO", s: 10, prev: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] },
+  { n: "YPO Qatar Integrated", t: "YPO", s: 11, prev: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
   { n: "YPO Jordan Integrated", t: "YPO", s: 10, prev: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1] },
   { n: "YPO Kuwait Integrated", t: "YPO", s: 10, prev: 10, v: [0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1] },
-  { n: "YPO Indus Integrated", t: "YPO", s: 9, prev: 8, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] },
   { n: "YPO Tunisia Integrated", t: "YPO", s: 9, prev: 9, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1] },
   { n: "YPO Gold Saudi", t: "YPO Gold", s: 7, prev: 7, g: 1, v: [0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1] },
 ];
 
 const PREV_DATA = [
+  { n: "YPO Khaleej Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Morocco Integrated", t: "YPO", s: 14, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Emirates Integrated", t: "YPO", s: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] },
   { n: "YPO Gold Lebanon", t: "YPO Gold", s: 13, g: 1, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
-  { n: "YPO Khaleej Integrated", t: "YPO", s: 13, v: [1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1] },
   { n: "YPO Levant Integrated", t: "YPO", s: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Olive MENA Regional Integrated", t: "YPO", s: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Pakistan", t: "YPO", s: 13, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
@@ -94,12 +94,12 @@ const PREV_DATA = [
   { n: "YPO MENA One Regional Integrated", t: "YPO", s: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1] },
   { n: "YPO Oman Integrated", t: "YPO", s: 11, v: [0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1] },
   { n: "YPO Palestine Integrated", t: "YPO", s: 11, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1] },
+  { n: "YPO Qatar Integrated", t: "YPO", s: 11, v: [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] },
   { n: "YPO Iraq Integrated", t: "YPO", s: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] },
   { n: "YPO Jordan Integrated", t: "YPO", s: 10, v: [0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1] },
   { n: "YPO Kuwait Integrated", t: "YPO", s: 10, v: [0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1] },
-  { n: "YPO Qatar Integrated", t: "YPO", s: 10, v: [1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] },
+  { n: "YPO Indus Integrated", t: "YPO", s: 9, v: [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] },
   { n: "YPO Tunisia Integrated", t: "YPO", s: 9, v: [1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1] },
-  { n: "YPO Indus Integrated", t: "YPO", s: 8, v: [0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1] },
   { n: "YPO Gold Saudi", t: "YPO Gold", s: 7, g: 1, v: [0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1] },
 ];
 
@@ -266,7 +266,7 @@ export default function App() {
           Chapter Commitments by Status
         </h1>
         <p style={{ fontSize: 13.5, color: MUTED, marginTop: 10, marginBottom: 18 }}>
-          Commitment fulfilment across all MENA chapters · {year === "current" ? "As of 22 September 2026" : year === "previous" ? "As of 21 September 2026" : "21 September 2026 → 22 September 2026"}
+          Commitment fulfilment across all MENA chapters · {year === "current" ? "As of 24 September 2026" : year === "previous" ? "As of 22 September 2026" : "22 September 2026 → 24 September 2026"}
         </p>
 
         <div className="no-print" style={{ display: "inline-flex", background: "#fff", border: `1px solid ${CARD_BORDER}`, borderRadius: 10, padding: 4, gap: 2 }}>
@@ -281,7 +281,7 @@ export default function App() {
             border: "none", cursor: "pointer",
             background: year === "previous" ? NAVY : "transparent",
             color: year === "previous" ? "#fff" : "#4a5568",
-          }}>21 Sep · Previous</button>
+          }}>22 Sep · Previous</button>
           <button onClick={() => changeYear("compare")} style={{
             fontFamily: SANS, fontSize: 13, fontWeight: 700, padding: "8px 18px", borderRadius: 7,
             border: "none", cursor: "pointer",
@@ -291,12 +291,12 @@ export default function App() {
         </div>
         {year === "previous" && (
           <div style={{ marginTop: 12, fontSize: 12, color: AMBER_TEXT, background: AMBER_PALE, display: "inline-block", padding: "6px 12px", borderRadius: 8 }}>
-            Viewing the 21 September 2026 snapshot — read-only reference, not the current status.
+            Viewing the 22 September 2026 snapshot — read-only reference, not the current status.
           </div>
         )}
         {year === "compare" && (
           <div style={{ marginTop: 12, fontSize: 12, color: AMBER_TEXT, background: AMBER_PALE, display: "inline-block", padding: "6px 12px", borderRadius: 8 }}>
-            Comparing the 21 September 2026 snapshot to today, 22 September 2026 — both within FY 2026–27.
+            Comparing the 22 September 2026 snapshot to today, 24 September 2026 — both within FY 2026–27.
           </div>
         )}
       </div>
@@ -516,8 +516,8 @@ export default function App() {
                             <div style={{ fontWeight: 700, marginBottom: 4, fontSize: 12 }}>{d.n}</div>
                             <div style={{ fontSize: 11 }}>{LABELS_FULL[i]}</div>
                             <div style={{ marginTop: 4 }}>
-                              {changed === 1 && <span style={{ color: "#8fe0a8" }}>▲ Gained since 21 Sep 2026</span>}
-                              {changed === -1 && <span style={{ color: "#ff9d92" }}>▼ Lost since 21 Sep 2026</span>}
+                              {changed === 1 && <span style={{ color: "#8fe0a8" }}>▲ Gained since 22 Sep 2026</span>}
+                              {changed === -1 && <span style={{ color: "#ff9d92" }}>▼ Lost since 22 Sep 2026</span>}
                               {changed === 0 && <span style={{ color: "#c9d3e0" }}>Unchanged — {val ? "still met" : "still not met"}</span>}
                             </div>
                           </div>
@@ -594,7 +594,7 @@ export default function App() {
                         <div style={{ fontWeight: 700, marginBottom: 4 }}>{d.n}</div>
                         {delta != null && (
                           <div style={{ color: delta === 0 ? "#c9d3e0" : delta > 0 ? "#8fe0a8" : "#ff9d92" }}>
-                            {delta === 0 ? "Unchanged" : delta > 0 ? `▲ up ${delta} vs 21 Sep` : `▼ down ${Math.abs(delta)} vs 21 Sep`}
+                            {delta === 0 ? "Unchanged" : delta > 0 ? `▲ up ${delta} vs 22 Sep` : `▼ down ${Math.abs(delta)} vs 22 Sep`}
                           </div>
                         )}
                       </div>
@@ -614,7 +614,7 @@ export default function App() {
 
       {year === "current" && (
         <p style={{ fontSize: 11.5, color: MUTED, marginTop: 14 }}>
-          Scores reflect the fiscal year that began 7/1/2026. Annual commitments (Officer ID, Conduct Cmte, Learning Cal, Forum Mod, Forum Data, Membership) reset once at FY start and are being completed progressively — hover a "Total met" pill for the change vs. the 21 September 2026 snapshot.
+          Scores reflect the fiscal year that began 7/1/2026. Annual commitments (Officer ID, Conduct Cmte, Learning Cal, Forum Mod, Forum Data, Membership) reset once at FY start and are being completed progressively — hover a "Total met" pill for the change vs. the 22 September 2026 snapshot.
         </p>
       )}
 
